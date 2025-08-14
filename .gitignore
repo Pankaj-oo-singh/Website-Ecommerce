@@ -1,13 +1,36 @@
+# =========================
+# Backend (Spring Boot)
+# =========================
 
-/myAppBackend/target/
-/myAppBackend/*.log
-/myAppBackend/src/main/resources/application.properties
-/my-App/node_modules/ 
-/my-App/build/
+# Build output
+/MyAppBackend/target/
 
+# Logs
+/MyAppBackend/*.log
 
+# Sensitive config
+/MyAppBackend/src/main/resources/application.properties
 
+# IDE files
+/.idea/
+/*.iml
+*.class
 
+# =========================
+# Frontend (React)
+# =========================
 
+# Node modules
+/my-app/node_modules/
 
+# Build output
+/my-app/build/
 
+# Environment files
+/my-app/.env
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
