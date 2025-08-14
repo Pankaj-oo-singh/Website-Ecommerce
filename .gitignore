@@ -1,0 +1,13 @@
+
+/myAppBackend/target/
+/myAppBackend/*.log
+/myAppBackend/src/main/resources/application.properties
+/my-App/node_modules/ 
+/my-App/build/
+
+
+
+
+
+
+

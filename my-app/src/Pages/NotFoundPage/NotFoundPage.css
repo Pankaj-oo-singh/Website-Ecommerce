@@ -1,0 +1,34 @@
+/* NotFoundPage.css */
+
+/* Animate fade-in for elements with delay */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate__fadeIn {
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .animate__delay-1s {
+    animation-delay: 1s;
+  }
+  
+  .animate__delay-2s {
+    animation-delay: 2s;
+  }
+  
+  .animate__delay-3s {
+    animation-delay: 3s;
+  }
+  
+  .animate__delay-4s {
+    animation-delay: 4s;
+  }
+  
