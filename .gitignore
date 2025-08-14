@@ -3,13 +3,13 @@
 # =========================
 
 # Build output
-/MyAppBackend/target/
+/myAppBackend/target/
 
 # Logs
-/MyAppBackend/*.log
+/myAppBackend/*.log
 
 # Sensitive config
-/MyAppBackend/src/main/resources/application.properties
+/myAppBackend/src/main/resources/application.properties
 
 # IDE files
 /.idea/
