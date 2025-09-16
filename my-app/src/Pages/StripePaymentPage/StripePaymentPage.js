@@ -7,7 +7,7 @@ import { Elements } from '@stripe/react-stripe-js';
 import CheckoutForm from '../../components/CheckoutForm/CheckoutForm'; // Adjust the path if needed
 
 // Load your Stripe public key
-const stripePromise = loadStripe('pk_test_51RFaENCvpDkgoYWyPlRGJX35QOX0vNyxATUgcMJnie41MLJT1B3Nvb5driqcVzB0NdWFMlZ0jV6bjSpkWDqg1aPf00SrzkmNUG'); // Replace with your Stripe publishable key
+const stripePromise = loadStripe('####################################################'); // Replace with your Stripe publishable key
 
 const StripePaymentPage = () => {
   const [searchParams] = useSearchParams();

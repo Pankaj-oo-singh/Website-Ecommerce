@@ -170,7 +170,19 @@ public ProductDto getProductById(Long productId) {
                 .collect(Collectors.toList());
     }
 
+    public List<ProductDto> searchProducts(String keyword) {
+        List<Product> products;
 
+        if (keyword == null || keyword.isBlank()) {
+            products = productRepository.findAll();
+        } else {
+            products = productRepository.searchProducts(keyword);
+        }
+
+        return products.stream()
+                .map(product -> modelMapper.map(product, ProductDto.class))
+                .collect(Collectors.toList());
+    }
 
 
 

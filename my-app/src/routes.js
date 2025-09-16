@@ -23,6 +23,7 @@ import CreateProduct from './Pages/Account/CreateProduct';
 import CreateCategory from './Pages/Account/CreateCategory';
 import AdminCategoryPage from './Pages/AdminPanel/dminCategoryPage';
 import AdminProductPage from './Pages/AdminPanel/AdminProductPage';
+import SearchPage from './components/search/SearchPage'
 
 
 
@@ -89,6 +90,10 @@ const router = createBrowserRouter([
                 path: '/about',
                 element: <AboutPage />,
               },
+              {
+                    path:'/search',
+                    element:<SearchPage/>
+                  },
                {
                 path: '/AdminCategory',
                 element: < AdminCategoryPage/>,
