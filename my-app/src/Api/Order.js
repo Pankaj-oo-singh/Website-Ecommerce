@@ -1,20 +1,7 @@
 import axios from "axios";
 import { BASE_URL,getHeaders } from "./Constant"
 
-// export const placeOrderAPI = async (data)=>{
-//     const url = BASE_URL + '/api/order';
-//     try{
-//         const response = await axios(url,{
-//             method:"POST",
-//             data:data,
-//             headers:getHeaders()
-//         });
-//         return response?.data;
-//     }
-//     catch(err){
-//         throw new Error(err);
-//     }
-// }
+
 export const placeOrderAPI = async (data) => {
     const url = BASE_URL + '/api/order/create';
     try {

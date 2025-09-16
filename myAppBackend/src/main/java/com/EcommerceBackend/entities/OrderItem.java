@@ -24,6 +24,7 @@ public class OrderItem {
 
     private Long productVariantId;
 
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "order_id",nullable = false)
     @JsonIgnore

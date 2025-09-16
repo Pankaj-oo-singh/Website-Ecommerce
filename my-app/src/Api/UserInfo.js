@@ -4,19 +4,6 @@ import { getHeaders } from "./Constant";
 import { logOut } from "../Utils/Jwt-Utils";
 
 
-// export const fetchUserDetails = async ()=>{
-//     const url = BASE_URL + '/api/user/profile';
-//     try{
-//         const response = await axios(url,{
-//             method:"GET",
-//             headers:getHeaders()
-//         });
-//         return response?.data;
-//     }
-//     catch(err){
-//         throw new Error(err);
-//     }
-// }
 
 export const fetchUserDetails = async () => {
     const url = BASE_URL + '/api/user/profile';
@@ -69,33 +56,6 @@ export const fetchUserDetails = async () => {
   };
 
 
-//   export const fetchOrderAPI = async ()=>{
-//     const url = BASE_URL + `/api/order/user`;
-//     try{
-//         const response = await axios(url,{
-//             method:"GET",
-//             headers:getHeaders()
-//         });
-//         return response?.data;
-//     }
-//     catch(err){
-//         throw new Error(err);
-//     }
-// }
-
-// export const cancelOrderAPI = async (id)=>{
-//     const url = BASE_URL + `/api/order/cancel/${id}`;
-//     try{
-//         const response = await axios(url,{
-//             method:"POST",
-//             headers:getHeaders()
-//         });
-//         return response?.data;
-//     }
-//     catch(err){
-//         throw new Error(err);
-//     }
-// }
 
 
 export const fetchOrderAPI = async () => {

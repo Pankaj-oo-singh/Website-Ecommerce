@@ -21,7 +21,7 @@ import AddAddress from './Pages/Account/AddAddress';
 import OAuth2LoginCallback from './Pages/OAuth2LoginCallback';
 import CreateProduct from './Pages/Account/CreateProduct';
 import CreateCategory from './Pages/Account/CreateCategory';
-import AdminCategoryPage from './Pages/AdminPanel/dminCategoryPage';
+import AdminCategoryPage from './Pages/AdminPanel/AdminCategoryPage';
 import AdminProductPage from './Pages/AdminPanel/AdminProductPage';
 import SearchPage from './components/search/SearchPage'
 

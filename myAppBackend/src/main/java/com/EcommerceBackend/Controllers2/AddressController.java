@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/address")
@@ -24,11 +25,17 @@ public class AddressController {
     }
 
 
+//
+//    @DeleteMapping("/{id}")
+//    public ResponseEntity<Void> deleteAddress(@PathVariable("id") Long addressId) {
+//        addressService.deleteAddress(addressId);
+//        return ResponseEntity.ok().build();
+//    }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteAddress(@PathVariable("id") Long addressId) {
+    public ResponseEntity<Map<String, String>> deleteAddress(@PathVariable("id") Long addressId) {
         addressService.deleteAddress(addressId);
-        return ResponseEntity.ok().build();
+        return ResponseEntity.ok(Map.of("message", "Address deleted successfully"));
     }
 
 
