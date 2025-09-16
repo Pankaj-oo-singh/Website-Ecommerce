@@ -60,16 +60,5 @@ public class AuthController {
         return ResponseEntity.ok(loginResponseDto);
     }
 
-//    @PostMapping("/verify")
-//    public ResponseEntity<?> verifyCode(@RequestBody Map<String,String> map){
-//        String userName = map.get("userName");
-//        String code = map.get("code");
-//
-//        User user= (User) userService.loadUserByUsername(userName);
-//        if(null != user && user.getVerificationCode().equals(code)){
-//            registrationService.verifyUser(userName);
-//            return new ResponseEntity<>(HttpStatus.OK);
-//        }
-//        return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-//    }
+
 }

@@ -5,7 +5,7 @@ import com.EcommerceBackend.dto.ProductDto;
 import com.EcommerceBackend.dto.ProductResourceDto;
 import com.EcommerceBackend.dto.ProductVariantDto;
 import com.EcommerceBackend.entities.*;
-import com.example.demo4.SecurityApp.entities.*;
+
 import com.EcommerceBackend.exceptions.ResourceNotFoundException;
 import com.EcommerceBackend.repositories2.CategoryRepository;
 import com.EcommerceBackend.repositories2.CategoryTypeRepository;
@@ -27,53 +27,6 @@ public class ProductService {
     private final ModelMapper modelMapper;
 
 
-
-//    public ProductDto createProduct(ProductDto productDto) {
-//        // Convert ProductDto to Product entity
-//        Product product = modelMapper.map(productDto, Product.class);
-//
-//        // Set Category
-//        Category category = categoryRepository.findById(productDto.getCategoryId())
-//                .orElseThrow(() -> new ResourceNotFoundException("Category not found with ID: " + productDto.getCategoryId()));
-//        product.setCategory(category);
-//
-//        // Set Category Type (Optional)
-//        if (productDto.getCategoryTypeId() != null) {
-//            CategoryType categoryType = categoryTypeRepository.findById(productDto.getCategoryTypeId())
-//                    .orElseThrow(() -> new ResourceNotFoundException("Category Type not found with ID: " + productDto.getCategoryTypeId()));
-//            product.setCategoryType(categoryType);
-//        }
-//
-//        // Handle Product Variants
-//        if (productDto.getVariants() != null) {
-//            List<ProductVariant> variants = productDto.getVariants().stream()
-//                    .map(variantDto -> {
-//                        ProductVariant variant = modelMapper.map(variantDto, ProductVariant.class);
-//                        variant.setProduct(product);
-//                        return variant;
-//                    })
-//                    .collect(Collectors.toList());
-//            product.setProductVariants(variants); // Ensure this matches the field name in your Product entity
-//        }
-//
-//        // Handle Product Resources
-//        if (productDto.getProductResources() != null) {
-//            List<ProductResource> resources = productDto.getProductResources().stream()
-//                    .map(resourceDto -> {
-//                        ProductResource resource = modelMapper.map(resourceDto, ProductResource.class);
-//                        resource.setProduct(product);
-//                        return resource;
-//                    })
-//                    .collect(Collectors.toList());
-//            product.setResources(resources); // Ensure this matches the field name in your Product entity
-//        }
-//
-//        // Save the product
-//        Product savedProduct = productRepository.save(product);
-//
-//        // Convert back to DTO and return
-//        return modelMapper.map(savedProduct, ProductDto.class);
-//    }
 
 
     public ProductDto createProduct(ProductDto productDto) {

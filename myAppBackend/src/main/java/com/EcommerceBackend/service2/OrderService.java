@@ -6,8 +6,7 @@ import com.EcommerceBackend.dto.OrderRequestDto;
 import com.EcommerceBackend.dto.OrderResponseDto;
 import com.EcommerceBackend.dto.ProductDto;
 import com.EcommerceBackend.entities.*;
-import com.example.demo4.SecurityApp.dto.*;
-import com.example.demo4.SecurityApp.entities.*;
+
 import com.EcommerceBackend.repositories.OrderRepository;
 import com.EcommerceBackend.repositories.UserRepository;
 import com.EcommerceBackend.repositories2.AddressRepository;
